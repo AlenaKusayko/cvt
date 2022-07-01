@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'RubikReg';
+    src: url("../fonts/Rubik-Regular.ttf");
+}
+.container {
+    width: 1180px;
+    margin: 0 auto;
+}
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo__p {
+    margin-left: 11.88px;
+    font-family: 'RubikReg';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333333;
+}
+.header__search {
+    width: 320px;
+    height: 25px;
+    border: none;
+    border-bottom: 1px solid #333333;
+    font-family: 'RubikReg';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+    margin-top: 11px;
+    margin-bottom: 4px;
+}
+.header__search::-webkit-input-placeholder {
+    font-family: 'RubikReg';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #828282;
+}
+.header__search:focus {
+    outline: none;
+}
+.header__search__button {
+    font-family: 'RubikReg';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #E5261E;
+    border: none;
+    background-color: white;
+    margin-left: 32px;
+}
+.header__getin {
+    font-family: 'RubikReg';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #E5261E;
+    border-radius: 4px;
+    width: 113px;
+    height: 38px;
+    border: none;
+}
+.header__getin:hover {
+    background: #CC221B;
+}
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 44px;
+    list-style: none;
+}
+.header__nav a {
+    font-family: 'RubikReg';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: right;
+    color: black;
+    text-decoration: none;
+}
+.header__nav__first {
+    margin-right: 24px;
+}
+.header__nav a:hover {
+    color: #E5261E;
+    border-bottom: 2px solid #E5261E;
+    padding-bottom: 9px;
+}
+.main__h1 {
+    font-family: 'RubikReg';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #333333;
+    margin-top: 32px;
+}
+.new__items {
+    margin-top: 16px;
+}
+.new__item {
+    width: 280px;
+}
+.new__item__name {
+    margin-top: 16px;
+    font-family: 'RubikReg';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333333;
+}
+.new__item__img {
+    border-radius: 8px; 
+}
+.new__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.new__item__container {
+   position: relative; 
+}
+.new__item__container div {
+    position: absolute;
+    left: 0;
+    top: 0; 
+    padding: 16px;
+    border-radius: 8px;
+    opacity: 0;
+    font-family: 'RubikReg';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #F2F2F2;
+    background: #333333;
+    width: 248px ;
+    height: 338px;
+}
+.new__item:hover div {
+    opacity: 0.8;
+    cursor: pointer;
+    transition-delay: .3s;
+    transition-timing-function: ease;
+}
+.genres {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 16px;
+    margin-bottom: 72px;
+}
+.genre__comedy {
+    width: 280px;
+    height: 208px;
+    background: linear-gradient(127.83deg, #F2C94C 8.44%, #F29A4A 91.36%);
+    box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.genre__smail {
+    font-family: 'RubikReg';
+    font-size: 48px;
+    color: #FFFFFF;
+ } 
+ .genre__text {
+    font-family: 'RubikReg';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 160px;
+ }
+ .genre__item {
+    width: 280px;
+    height: 208px; 
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+ }
+ .comedy {
+    background: linear-gradient(127.83deg, #F2C94C 8.44%, #F29A4A 91.36%);
+    opacity: 0.8;
+    box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);   
+ }
+ .drama {
+    background: linear-gradient(127.83deg, #F2994A 8.44%, #EB5757 91.36%);
+    opacity: 0.8;
+    box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+ }
+ .fantast {
+    background: linear-gradient(127.83deg, #56CCF2 8.44%, #2F80ED 91.36%);
+    opacity: 0.8;
+    box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+ }
+ .horror {
+    background: linear-gradient(127.83deg, #828282 8.44%, #333333 91.36%);
+    opacity: 0.8;
+    box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15); 
+ }
+ .genre__item:hover {
+    opacity: 1;
+ }
+ footer {
+    background: #F2F2F2;
+ }
+ .container__footer {
+    display: flex;
+ }
+ .container__footer__img {
+    margin-top: 28px;
+    margin-bottom: 28px;
+ }
+ .footer__text {
+    margin-left: 40px;
+    margin-top: 22px;
+ }
+ .footer__text p {
+    font-family: 'RubikReg';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+    padding-bottom: 6px;
+ }
+ .footer__text__a{
+    margin-top: 4px;
+
+ }
+ .footer__text__a_a{
+    color: #1F4766;
+    font-weight: 500;
+    text-decoration: none;
+ }
+ 
